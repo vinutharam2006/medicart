@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediCart | Medicine Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <h1>Medi<span>Cart</span></h1>
+
+    <input
+      id="searchInput"
+      type="text"
+      placeholder="Search medicines by name..."
+    >
+     <button id="accountButton">Create account</button>
+    <button id="cartButton">Cart (<span id="cartCount">0</span>)</button>
+    <button id="ordersButton">My Orders</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p>DATA-DRIVEN PHARMACY</p>
+      <h2>Find healthcare essentials easily.</h2>
+      <p>Explore medicines from our product dataset.</p>
+    </section>
+
+    <section class="controls">
+      <div>
+        <h2>Medicine catalogue</h2>
+        <p id="medicineCount">Loading medicines...</p>
+      </div>
+
+      <select id="categoryFilter">
+        <option value="">All categories</option>
+      </select>
+    </section>
+
+    <section id="medicineGrid" class="medicine-grid">
+      <p>Loading product data...</p>
+    </section>
+
+    <aside id="cartPanel" class="cart-panel hidden">
+      <button id="closeCart">×</button>
+      <h2>Your cart</h2>
+      <div id="cartItems"></div>
+      <h3>Total: ₹<span id="cartTotal">0</span></h3>
+      <button id="checkoutButton">Proceed to checkout</button>
+
+    </aside>
+    <aside id="ordersPanel" class="cart-panel hidden">
+  <button id="closeOrders">×</button>
+  <h2>My Orders</h2>
+  <div id="ordersList">
+    <p>No orders loaded.</p>
+  </div>
+</aside>
+  </main>
+  <div id="authModal" class="modal hidden">
+  <div class="modal-box">
+    <button id="closeAuth">×</button>
+
+    <h2 id="authTitle">Create your account</h2>
+
+    <form id="authForm">
+      <div class="register-field">
+        <label>Full name</label>
+        <input id="nameInput" type="text" required>
+      </div>
+
+      <div class="register-field">
+        <label>Phone number</label>
+        <input id="phoneInput" type="text" required>
+      </div>
+
+      <div class="register-field">
+        <label>Delivery address</label>
+        <textarea id="addressInput" required></textarea>
+      </div>
+
+      <label>Email address</label>
+      <input id="emailInput" type="email" required>
+
+      <label>Password</label>
+      <input id="passwordInput" type="password" required>
+
+      <button id="authSubmitButton" type="submit">
+        Create account
+      </button>
+    </form>
+
+    <p id="authMessage"></p>
+
+    <button id="switchAuthButton" class="text-button">
+      Already have an account? Sign in
+    </button>
+  </div>
+</div>
+  <footer>
+    Educational project only. This website does not provide medical advice.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

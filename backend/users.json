@@ -1,0 +1,22 @@
+[
+  {
+    "id": "ea11aa03-b5cf-4a10-b6d6-a7c3acfd4f66",
+    "name": "vinutha r",
+    "email": "hey@gmail.com",
+    "phone": "123456789",
+    "address": "hanumanthapur",
+    "passwordHash": "bf63a984d14d67819fc51a3ea465f11a4b5cd01dd1d13c22a2ba3261377812a1fbb0383846ed0f99fff2749664de8ff6fac2d7d959ed8a49450c8e186b5aae9f",
+    "salt": "8041cc23b4b766c548a5dc0d85b1ec24",
+    "createdAt": "2026-09-05T12:22:12.610Z"
+  },
+  {
+    "id": "153e9dde-389b-41f1-a7c9-9489e16b0dad",
+    "name": "Ramachandraiah",
+    "email": "ramachandraiah@gmail.com",
+    "phone": "6544451611",
+    "address": "yfuighkhkj",
+    "passwordHash": "fd1c275fff7bbb64e3ba82f71ed050331e58dd01f651fad3ed4631dba956f37b45549a79a714533a128f20874f641ec8d871368a291d9d5de5c177c39f7195d4",
+    "salt": "02ef7fd8c02a34ec37c73f941f95df7c",
+    "createdAt": "2026-09-05T14:01:34.340Z"
+  }
+]

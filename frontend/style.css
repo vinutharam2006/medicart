@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7f6;
+  color: #1f2937;
+}
+
+.navbar {
+  background: #0d4f4c;
+  color: white;
+  padding: 15px 8%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.navbar h1 span {
+  color: #8de0c5;
+}
+
+.navbar input {
+  flex: 1;
+  max-width: 520px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.navbar button,
+#checkoutButton {
+  background: #f6bf4f;
+  border: none;
+  border-radius: 6px;
+  padding: 11px 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+main {
+  max-width: 1180px;
+  margin: auto;
+  padding: 25px;
+}
+
+.hero {
+  padding: 42px;
+  border-radius: 14px;
+  color: white;
+  background: linear-gradient(120deg, #0d4f4c, #168578);
+}
+
+.hero p:first-child {
+  color: #b5f5df;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.hero h2 {
+  margin-bottom: 8px;
+  font-size: 34px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0 15px;
+}
+
+.controls h2,
+.controls p {
+  margin: 5px 0;
+}
+
+.controls p {
+  color: #667085;
+}
+
+.controls select {
+  padding: 10px;
+  border: 1px solid #cbd5d4;
+  border-radius: 6px;
+}
+
+.medicine-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.medicine-card {
+  background: white;
+  border: 1px solid #e2e8e6;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.medicine-card img {
+  width: 100%;
+  height: 145px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #eff7f5;
+}
+
+.category {
+  color: #168578;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 13px;
+}
+
+.medicine-card h3 {
+  margin: 8px 0;
+}
+
+.manufacturer {
+  color: #667085;
+  font-size: 13px;
+  min-height: 30px;
+}
+
+.price {
+  font-size: 21px;
+  font-weight: bold;
+  margin: 12px 0;
+}
+
+.add-button {
+  width: 100%;
+  padding: 10px;
+  background: #0d4f4c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cart-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(390px, 100%);
+  height: 100vh;
+  padding: 25px;
+  background: white;
+  box-shadow: -3px 0 15px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+#closeCart {
+  float: right;
+  border: none;
+  background: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.cart-item {
+  border-bottom: 1px solid #e2e8e6;
+  padding: 13px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cart-item button {
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #667085;
+  font-size: 13px;
+}
+
+@media (max-width: 750px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+
+  .navbar input {
+    order: 3;
+    flex-basis: 100%;
+  }
+
+  .hero {
+    padding: 25px;
+  }
+
+  .hero h2 {
+    font-size: 27px;
+  }
+
+  .medicine-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.modal-box {
+  position: relative;
+  width: min(460px, 100%);
+  padding: 28px;
+  border-radius: 12px;
+  background: white;
+}
+
+#closeAuth {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  border: none;
+  background: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+#authForm {
+  display: grid;
+  gap: 8px;
+}
+
+#authForm label {
+  margin-top: 7px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#authForm input,
+#authForm textarea {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #cbd5d4;
+  border-radius: 6px;
+  font: inherit;
+}
+
+#authForm textarea {
+  min-height: 75px;
+  resize: vertical;
+}
+
+#authSubmitButton {
+  margin-top: 12px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #0d4f4c;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.text-button {
+  margin-top: 15px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: #0d4f4c;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#authMessage {
+  color: #c0392b;
+  font-size: 14px;
+}
+.modal.hidden {
+  display: none;
+}

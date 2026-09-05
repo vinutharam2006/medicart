@@ -1,0 +1,28 @@
+[
+  {
+    "id": "15c5aab2-0a4a-471a-bc0b-0654b641d36f",
+    "userId": "153e9dde-389b-41f1-a7c9-9489e16b0dad",
+    "items": [
+      {
+        "id": 1,
+        "drugName": "Atorvastatin",
+        "price": 60,
+        "quantity": 2
+      },
+      {
+        "id": 2,
+        "drugName": "Amoxicillin",
+        "price": 62,
+        "quantity": 1
+      },
+      {
+        "id": 5,
+        "drugName": "Omeprazole",
+        "price": 75,
+        "quantity": 1
+      }
+    ],
+    "total": 257,
+    "orderedAt": "2026-09-05T14:02:06.884Z"
+  }
+]
