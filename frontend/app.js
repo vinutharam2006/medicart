@@ -1,5 +1,5 @@
-const API_URL = "http://localhost:5000/api/medicines";
-const API_BASE = "http://localhost:5000/api";
+const API_URL = "https://medicart-backend-5mnp.onrender.com/api/medicines";
+const API_BASE = "https://medicart-backend-5mnp.onrender.com/api";
 
 let medicines = [];
 let cart = [];
