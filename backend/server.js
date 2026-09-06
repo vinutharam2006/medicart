@@ -253,6 +253,8 @@ const server = http.createServer(async (request, response) => {
   }
 });
 
-server.listen(5000, () => {
-  console.log("Backend is running at http://localhost:5000");
+const PORT = process.env.PORT || 5000;
+
+server.listen(PORT, "0.0.0.0", () => {
+  console.log(`Backend is running on port ${PORT}`);
 });
